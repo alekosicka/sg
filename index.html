@@ -1,159 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justpoint Content Guide</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our voice and positioning — Justpoint Content Guide</title>
 
-    <style>
-        :root {
-            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-serif: 'Source Serif 4', Georgia, serif;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
 
-        body {
-            font-family: var(--font-sans);
-            line-height: 1.6;
-            color: #1a1a1a;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #fff;
-        }
+<style>
+  :root {
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Source Serif 4', serif;
+  }
 
-        /* Nagłówki */
-        h1, h2, h3 {
-            font-family: var(--font-serif);
-            font-weight: 600;
-            margin-top: 2em;
-        }
+  body {
+    font-family: var(--font-sans);
+    color: #000;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
 
-        p {
-            font-size: 16px;
-            color: rgba(0,0,0,0.7);
-            margin-bottom: 24px;
-        }
+  .guide-container {
+    padding: 60px 40px;
+    max-width: 800px;
+  }
 
-        .section-header {
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: #999;
-            margin-bottom: 40px;
-            font-weight: 600;
-        }
+  h1 {
+    font-family: var(--font-serif);
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 48px;
+    letter-spacing: -0.01em;
+  }
 
-        /* Kontenery sekcji */
-        .content-block {
-            border-top: 1px solid #eee;
-            padding-top: 40px;
-            margin-bottom: 60px;
-        }
+  .section {
+    margin-bottom: 80px;
+  }
 
-        /* Karty Do/Don't */
-        .do-dont-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 24px;
-            margin-top: 24px;
-        }
+  h2 {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(0,0,0,0.45);
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    padding-bottom: 8px;
+  }
 
-        .card {
-            padding: 24px;
-            border-radius: 4px;
-            font-size: 15px;
-            border: 1px solid transparent;
-        }
+  h3 {
+    font-family: var(--font-serif);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
 
-        .do-card {
-            background-color: #f6fdf9;
-            border-color: #e6f4ea;
-        }
+  p {
+    font-size: 15px;
+    color: rgba(0,0,0,0.7);
+    margin-bottom: 24px;
+  }
 
-        .dont-card {
-            background-color: #fef8f8;
-            border-color: #fceaea;
-        }
+  .entity-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 32px;
+  }
 
-        .label {
-            display: block;
-            font-weight: 600;
-            font-size: 12px;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-        }
+  .entity h4 {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
 
-        .label.do { color: #1e7e34; }
-        .label.dont { color: #d93025; }
+  .do-dont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
 
-        /* Listy */
-        ul {
-            padding-left: 20px;
-            color: rgba(0,0,0,0.7);
-        }
+  .do-box, .dont-box {
+    padding: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+  }
 
-        li {
-            margin-bottom: 10px;
-        }
+  .do-box { background: #f6fdf9; border-left: 2px solid #2e7d32; }
+  .dont-box { background: #fef8f8; border-left: 2px solid #d32f2f; }
 
-        .back-link {
-            display: inline-block;
-            margin-bottom: 40px;
-            text-decoration: none;
-            color: #666;
-            font-size: 14px;
-        }
-    </style>
+  .do-label, .dont-label {
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .do-label { color: #2e7d32; }
+  .dont-label { color: #d32f2f; }
+
+  .tbnt-trait-label {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 8px;
+  }
+
+  svg { width: 14px; height: 14px; }
+</style>
 </head>
 <body>
 
-    <a href="#" class="back-link">← Back to guide</a>
-    <div class="section-header">Content Guide</div>
+<div class="guide-container">
+  <h1>Our voice and positioning</h1>
 
-    <div class="content-block">
-        <h2>Factual</h2>
-        <p>We use plain, factual, and data-informed language. We acknowledge uncertainty and avoid exaggeration.</p>
-        
-        <div class="do-dont-grid">
-            <div class="card do-card">
-                <span class="label do">✓ Do</span>
-                <p>We use AI to analyze billions of data points and identify early signs of potentially harmful products.</p>
-            </div>
-            <div class="card dont-card">
-                <span class="label dont">✕ Don't</span>
-                <p>We harness cutting-edge AI capable of processing billions of data points with unparalleled precision...</p>
-            </div>
+  <div class="section">
+    <h2>The Mission</h2>
+    <p>Justpoint’s mission is to bring transparency and fairness to the consumer protection and legal industries. We use data to help people understand their rights and access justice.</p>
+  </div>
+
+  <div class="section">
+    <h2>The Two Entities</h2>
+    <div class="entity-comparison">
+      <div class="entity">
+        <h4>Justpoint Inc.</h4>
+        <p>The research and technology arm. It is scientific, data-driven, and objective. It identifies risks and trends.</p>
+      </div>
+      <div class="entity">
+        <h4>Justpoint PLLC</h4>
+        <p>The law firm. It is protective, authoritative, and client-focused. It acts on the findings to provide legal representation.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Tone and Voice Traits</h2>
+
+    <div class="tbnt-trait">
+      <p class="tbnt-trait-label">Factual but not alarmist</p>
+      <div class="do-dont">
+        <div class="do-box">
+          <div class="do-label">✓ Do</div>
+          <p>Recent studies show a link between long-term Depo-Provera use and an increased risk of brain tumors.</p>
         </div>
-    </div>
-
-    <div class="content-block">
-        <h2>Approachable</h2>
-        <p>We translate science into plain language and real-world terms so people can understand what it means for them.</p>
-        
-        <div class="do-dont-grid">
-            <div class="card do-card">
-                <span class="label do">✓ Do</span>
-                <p>Hair dye use has been linked to a higher risk of bladder and breast cancer.</p>
-            </div>
-            <div class="card dont-card">
-                <span class="label dont">✕ Don't</span>
-                <p>Chronic exposure to hair dye compounds is associated with increased oncogenic risk.</p>
-            </div>
+        <div class="dont-box">
+          <div class="dont-label">✕ Don't</div>
+          <p>DEPO-PROVERA ALERT! Is your birth control causing BRAIN TUMORS?</p>
         </div>
+      </div>
     </div>
 
-    <div class="content-block">
-        <h3>How we work</h3>
-        <ul>
-            <li>Break information into small, digestible steps.</li>
-            <li>Define unfamiliar terms the first time they appear.</li>
-            <li>Connect our findings to real-world impact.</li>
-        </ul>
+    <div class="tbnt-trait">
+      <p class="tbnt-trait-label">Reliable but not stiff</p>
+      <div class="do-dont">
+        <div class="do-box">
+          <div class="do-label">✓ Do</div>
+          <p>We'll update you regularly so you always know what's the current state of the process.</p>
+        </div>
+        <div class="dont-box">
+          <div class="dont-label">✕ Don't</div>
+          <p>The client shall be notified of any procedural updates in accordance with our standard protocol.</p>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
 
 </body>
 </html>
